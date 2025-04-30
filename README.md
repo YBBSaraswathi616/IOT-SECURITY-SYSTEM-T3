@@ -13,22 +13,30 @@
 "MENTOR": NEELA SANTOSH
 
 Description:
-This project simulates an Internet of Things (IoT) based air quality monitoring system that measures PM2.5 (particulate matter) and CO2 levels using potentiometers (in place of actual sensors). The data is read using an Arduino Uno and is displayed on the Serial Monitor. The aim is to monitor air quality in real time and lay the groundwork for sending data to the cloud or a mobile app.
-This is a prototype for real-world applications where actual gas/air sensors would be used.
+  The IoT-based security system is designed to detect unauthorized access, send alerts, and optionally take action (like turning on a buzzer or camera). This smart system uses sensors such as PIR motion detectors, door contact switches, and optionally a camera or sound sensor.
+When motion or an intrusion is detected:
+It triggers an alarm
+Sends a notification via the cloud (using Blynk, IFTTT, or Telegram)
+Logs the event or captures an image (optional)
+This system can be simulated in Tinkercad (without IoT features) and implemented in real hardware using ESP32/ESP8266.
 
 Features:
-1. Simulated Air Quality Measurement
-PM2.5 and CO2 levels are simulated using two potentiometers.
-Potentiometer knobs mimic changes in air pollution values.
-2. Real-Time Data Monitoring
-Values are continuously read via analog pins (A0 and A1).
-Output is shown live in the Serial Monitor (like a basic dashboard).
-3. Data Interpretation
-Raw analog readings are mapped to real-world units:
-PM2.5 in µg/m³
-CO2 in ppm
-4. User-Friendly & Affordable Prototype
-Uses readily available and low-cost components.
-Easy to simulate without physical sensors (perfect for learning and prototyping).
+1. Motion Detection
+Uses a PIR sensor to detect movement in a room.
+Works for both day and night.
+2. Intrusion Alert
+When motion is detected, a buzzer sounds and LED blinks.
+Can send real-time alerts via mobile notifications (if cloud-connected).
+3. IoT Connectivity (Advanced Version)
+Use ESP8266 or ESP32 to connect with:
+Blynk app
+Telegram bot
+ThingSpeak or Firebase
+Sends messages like: “Motion detected at 3:20 PM!”
+4. Arming & Disarming the System
+Optional feature: control system using a smartphone app, RFID tag, or keypad.
+5. Event Logging (Advanced)
+Stores data like time, date, and duration of motion.
+Useful for reviewing security events.
 
 #Output
