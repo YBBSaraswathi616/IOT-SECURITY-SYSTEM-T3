@@ -40,3 +40,4 @@ Stores data like time, date, and duration of motion.
 Useful for reviewing security events.
 
 #Output
+![Image](https://github.com/user-attachments/assets/afc0376e-5fac-4028-8e48-4cc844c174e4)
